@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OlenArt — рекламні креативи для соцмереж</title>
+  <meta name="description" content="Олена, OlenArt: рекламні креативи, каруселі для Instagram і моушн для соцмереж. Креатив за 1–2 дні, ціни від 500 грн.">
+  <!-- Поки сайт у розробці; прибрати перед запуском -->
+  <meta name="robots" content="noindex">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@400;900&family=Inter:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/sections.css">
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/reviews.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Перейти до змісту</a>
+
+  <!-- 0. Шапка: чорна, не sticky -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="#top" aria-label="OlenArt — на початок сторінки">Olen<span>Art</span></a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Навігація по сторінці">
+        <ul>
+          <li><a href="#about">Про&nbsp;мене</a></li>
+          <li><a href="#works">Приклади робіт</a></li>
+          <li><a href="#process">Етапи роботи</a></li>
+          <li><a href="#services">Ціни</a></li>
+          <li><a href="#reviews">Відгуки</a></li>
+          <li><a href="#contacts">Контакти</a></li>
+        </ul>
+        <a class="btn btn--small site-nav__cta" href="https://t.me/Shihova66" target="_blank" rel="noopener">Написати в&nbsp;Telegram</a>
+      </nav>
+
+      <a class="btn btn--small site-header__cta" href="https://t.me/Shihova66" target="_blank" rel="noopener">Написати в&nbsp;Telegram</a>
+
+      <button class="burger" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="site-nav">
+        <svg class="burger__open" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <svg class="burger__close" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M5 5l14 14M19 5L5 19"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 1. Перший екран -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <h1 id="hero-title" class="section__label hero__h1 rise" style="--d: 0.1s">Рекламні креативи для соцмереж</h1>
+          <p class="slogan hero__slogan">
+            <span class="hero__px hero__px--1" aria-hidden="true"></span>
+            <span class="hero__px hero__px--2" aria-hidden="true"></span>
+            <span class="hero__px hero__px--3" aria-hidden="true"></span>
+            <span class="hero__slogan-main"><span class="rise" style="--d: 0.25s">Кожен</span><span class="rise" style="--d: 0.4s">піксель</span></span>
+            <span class="hero__slogan-sub rise" style="--d: 0.55s">працює на&nbsp;продаж</span>
+          </p>
+          <p class="hero__lead only-desktop"><span class="rise" style="--d: 0.7s">Дизайн рекламних креативів для&nbsp;соціальних мереж і&nbsp;брендів</span><span class="rise" style="--d: 0.82s">Поєдную візуальну естетику, зміст і&nbsp;маркетингові цілі</span></p>
+          <p class="hero__lead only-mobile rise" style="--d: 0.7s">Поєдную естетику, зміст і&nbsp;маркетингові цілі</p>
+          <ul class="list-square hero__benefits">
+            <li class="only-desktop rise" style="--d: 0.94s"><span>естетика, що <b>продає</b></span></li>
+            <li class="rise" style="--d: 1.04s"><span>увага до <b>деталей</b></span></li>
+            <li class="rise" style="--d: 1.14s"><span>акцент на <b>результат</b></span></li>
+            <li class="only-mobile rise" style="--d: 1.02s"><span>макет за <b>1‑2&nbsp;дні</b></span></li>
+          </ul>
+          <div class="section__action rise" style="--d: 1.26s">
+            <a class="btn btn--block" href="#contacts">Обговоримо ваш проєкт</a>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <div class="hero__poster">
+            <img src="assets/img/hero-poster.jpg" alt="Приклад креативу: постер із портретом на помаранчевому фоні" width="1080" height="1080">
+          </div>
+          <span class="hero__sq hero__sq--a" aria-hidden="true"></span>
+          <span class="hero__sq hero__sq--b" aria-hidden="true"></span>
+          <span class="hero__design" aria-hidden="true">DESIGN</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Про мене -->
+    <section class="section section--white about" id="about" aria-labelledby="about-title">
+      <div class="container about__inner">
+        <p class="section__label about__label">Про&nbsp;мене</p>
+        <h2 id="about-title" class="about__title"><span class="accent">Не&nbsp;просто красиво</span><br>А&nbsp;зі змістом і&nbsp;метою</h2>
+        <div class="about__media">
+          <img src="assets/img/olena.jpg" alt="Олена, дизайнерка" loading="lazy">
+        </div>
+        <div class="about__body">
+          <p class="only-mobile">Привіт, я&nbsp;Олена. Роблю рекламу, яку не&nbsp;гортають, для&nbsp;малого бізнесу, агенцій та&nbsp;онлайн‑шкіл&nbsp;— від&nbsp;ідеї до&nbsp;готового макета.</p>
+          <p class="only-desktop">Привіт, я&nbsp;Олена&nbsp;— дизайнерка, яка робить візуал для&nbsp;соцмереж і&nbsp;реклами.<br>Для&nbsp;мене дизайн&nbsp;— це не&nbsp;прикраса, а&nbsp;інструмент: він має зупинити скрол<br>і&nbsp;підвести людину до&nbsp;покупки.</p>
+          <p class="only-desktop">Працюю з&nbsp;малим бізнесом, онлайн-школами та&nbsp;агенціями.<br>Розбираюся в&nbsp;задачі, пропоную ідеї і&nbsp;доводжу макет до&nbsp;результату,<br>яким ви&nbsp;будете пишатися.</p>
+
+          <div class="tools">
+            <h3 class="tools__title">Мої інструменти</h3>
+            <div class="tools__row">
+              <p class="tools__group">Design</p>
+              <ul class="chips">
+                <li class="chip">Figma</li>
+                <li class="chip">After Effects</li>
+                <li class="chip">Photoshop</li>
+              </ul>
+            </div>
+            <div class="tools__row">
+              <p class="tools__group">AI Tools</p>
+              <ul class="chips">
+                <li class="chip">Claude</li>
+                <li class="chip">ChatGPT</li>
+                <li class="chip">Gemini</li>
+                <li class="chip">Kling AI</li>
+              </ul>
+            </div>
+            <p class="note tools__note">AI&nbsp;— для&nbsp;швидких ідей і&nbsp;чернеток, фінальний дизайн вручну</p>
+          </div>
+
+          <div class="section__action">
+            <a class="btn btn--block" href="#works">Переглянути портфоліо</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Приклади робіт -->
+    <section class="section section--accent works" id="works" aria-labelledby="works-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="section__label works__label">Приклади робіт</p>
+          <h2 id="works-title">Роботи, які вже&nbsp;працюють</h2>
+        </div>
+
+        <!-- Сторінка works.html з фільтром — крок 3 -->
+        <nav class="filters" aria-label="Фільтри галереї">
+          <a href="works.html" aria-current="page">Усі</a>
+          <a href="works.html?type=creatives">Креативи</a>
+          <a href="works.html?type=carousels">Каруселі</a>
+          <a href="works.html?type=motion">Моушн</a>
+        </nav>
+
+        <div class="works__grid" data-works-rail>
+          <figure class="works__item">
+            <div class="work">
+              <img src="assets/img/works/creative-1.jpg" alt="Статичний креатив «Працюй з дому як хочеш»" loading="lazy">
+              <button type="button" class="work__zoom" aria-label="Збільшити креатив" data-lightbox="creative">
+                <span class="work__hint" aria-hidden="true">⤢ Збільшити</span>
+              </button>
+              <span class="label-dark work__type only-mobile">Креатив</span>
+            </div>
+            <figcaption class="works__caption">Статичний креатив</figcaption>
+          </figure>
+
+          <figure class="works__item">
+            <div class="work" data-carousel>
+              <img src="assets/img/works/carousel-1.jpg" alt="Карусель, слайд 1 з 7" loading="lazy" data-carousel-img>
+              <button type="button" class="work__zoom" aria-label="Збільшити слайд каруселі" data-lightbox="carousel">
+                <span class="work__hint" aria-hidden="true">⤢ Збільшити</span>
+              </button>
+              <button type="button" class="arrow-btn work__prev" aria-label="Попередній слайд" data-carousel-prev>‹</button>
+              <button type="button" class="arrow-btn work__next" aria-label="Наступний слайд" data-carousel-next>›</button>
+              <span class="label-dark work__type only-mobile">Карусель</span>
+              <span class="label-dark work__count"><span data-carousel-num>1</span> / <span data-carousel-total>7</span></span>
+              <div class="dots work__dots only-desktop" role="group" aria-label="Слайди каруселі" data-carousel-dots></div>
+            </div>
+            <figcaption class="works__caption">Карусель</figcaption>
+          </figure>
+
+          <figure class="works__item">
+            <div class="work">
+              <video src="assets/video/motion-1.mp4" poster="assets/img/works/motion-1-poster.jpg" muted loop playsinline preload="metadata" aria-label="Моушн-креатив"></video>
+              <button type="button" class="work__zoom" aria-label="Збільшити моушн" data-lightbox="motion">
+                <span class="work__hint" aria-hidden="true">⤢ Збільшити</span>
+              </button>
+              <button type="button" class="work__play" aria-label="Відтворити відео" data-video-toggle>▶</button>
+              <span class="label-dark work__type work__type--always">▶ Моушн</span>
+            </div>
+            <figcaption class="works__caption">Моушн-креатив</figcaption>
+          </figure>
+        </div>
+
+        <div class="dots works__dots only-mobile" role="group" aria-label="Перемикач робіт" data-works-dots></div>
+
+        <div class="section__action">
+          <a class="btn btn--white btn--block" href="#contacts">Хочу так само</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Етапи роботи -->
+    <section class="section process" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="section__label">Етапи роботи</p>
+          <h2 id="process-title" class="process__title"><span class="accent">Просто,</span> швидко, <span class="accent">прозоро</span></h2>
+        </div>
+        <ol class="process__steps">
+          <li class="process__step">
+            <span class="process__num" aria-hidden="true" style="--d: 0.7s">01</span>
+            <span class="process__body"><b>Заявка</b><span>Ви&nbsp;пишете в&nbsp;Telegram і&nbsp;коротко описуєте задачу</span></span>
+          </li>
+          <li class="process__step">
+            <span class="process__num" aria-hidden="true" style="--d: 0.88s">02</span>
+            <span class="process__body"><b>Бриф</b><span>Уточнюю деталі, узгоджуємо вартість і&nbsp;терміни</span></span>
+          </li>
+          <li class="process__step">
+            <span class="process__num" aria-hidden="true" style="--d: 1.06s">03</span>
+            <span class="process__body"><b>Дизайн</b><span>Готую макет за 1‑2&nbsp;дні</span></span>
+          </li>
+          <li class="process__step">
+            <span class="process__num" aria-hidden="true" style="--d: 1.24s">04</span>
+            <span class="process__body"><b>Правки</b><span>Без&nbsp;обмежень, доки результат відповідає брифу</span></span>
+          </li>
+          <li class="process__step">
+            <span class="process__num" aria-hidden="true" style="--d: 1.42s">05</span>
+            <span class="process__body"><b>Готові файли</b><span>Передаю у&nbsp;потрібних форматах і&nbsp;розмірах</span></span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 5. Послуги та ціни -->
+    <section class="section section--white services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="services__laptop only-desktop" aria-hidden="true">
+          <span class="services__grid"></span>
+          <span class="services__shadow"></span>
+          <span class="services__lap">
+            <img src="assets/img/laptop.png" alt="" width="360" height="302" loading="lazy">
+            <span class="services__sheen"></span>
+          </span>
+        </div>
+
+        <div class="section__head">
+          <p class="section__label">Послуги та&nbsp;ціни</p>
+          <h2 id="services-title">Креативи <span class="accent">під&nbsp;вашу задачу</span></h2>
+          <p>Новим клієнтам&nbsp;— знижка від <b class="accent">10%</b> на&nbsp;перше замовлення,<br class="only-desktop"> а&nbsp;для&nbsp;постійних клієнтів діють персональні знижки</p>
+        </div>
+
+        <ul class="services__list">
+          <li class="service">
+            <h3>Рекламні креативи</h3>
+            <p class="service__text">Банери для&nbsp;таргету, які виділяються в&nbsp;стрічці та&nbsp;чітко доносять пропозицію</p>
+            <p class="note service__note">Один макет; адаптація під&nbsp;інший формат&nbsp;— від&nbsp;100&nbsp;грн за&nbsp;розмір</p>
+            <p class="service__price">від&nbsp;500&nbsp;грн</p>
+          </li>
+          <li class="service">
+            <h3>Каруселі для&nbsp;Instagram</h3>
+            <p class="service__text">Пости, які гортають до&nbsp;кінця: структура, ритм, акценти</p>
+            <p class="note service__note">До&nbsp;7&nbsp;слайдів; кожен наступний&nbsp;— від&nbsp;150&nbsp;грн</p>
+            <p class="service__price">від&nbsp;1&nbsp;200&nbsp;грн</p>
+          </li>
+          <li class="service">
+            <h3>Анімовані креативи</h3>
+            <p class="service__text">Рух привертає увагу швидше за&nbsp;статику&nbsp;— оживлю ваш банер або рекламу</p>
+            <p class="note service__note">Анімація до&nbsp;10&nbsp;с; складніший моушн&nbsp;— за&nbsp;домовленістю</p>
+            <p class="service__price">від&nbsp;800&nbsp;грн</p>
+          </li>
+        </ul>
+
+        <ul class="list-square services__terms">
+          <li>Термін стандартного замовлення&nbsp;— 1–2&nbsp;дні</li>
+          <li>Правки без&nbsp;обмежень, доки результат відповідає погодженому брифу</li>
+        </ul>
+
+        <div class="section__action">
+          <a class="btn btn--block" href="#contacts">Розрахувати мій проєкт</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Відгуки: картки-переписки рендерить reviews.js -->
+    <section class="section section--reviews reviews" id="reviews" aria-labelledby="reviews-title">
+      <div class="container reviews__inner">
+        <div class="reviews__decor" aria-hidden="true">
+          <span class="reviews__grid"></span>
+          <span class="reviews__sq reviews__sq--1"></span>
+          <span class="reviews__sq reviews__sq--2"></span>
+          <span class="reviews__sq reviews__sq--3 only-desktop"></span>
+          <span class="reviews__sq reviews__sq--4 only-desktop"></span>
+          <span class="reviews__sq reviews__sq--5"></span>
+        </div>
+
+        <div class="section__head">
+          <p class="section__label">Відгуки</p>
+          <h2 id="reviews-title">Що&nbsp;кажуть<br class="only-mobile"> клієнти</h2>
+        </div>
+
+        <div class="reviews__list" data-reviews></div>
+
+        <p class="reviews__hint only-mobile">Гортайте вбік → <span data-reviews-count>9</span> відгуків</p>
+
+        <div class="reviews__nav only-desktop">
+          <button type="button" class="arrow-btn" aria-label="Попередні відгуки" data-reviews-prev>‹</button>
+          <div class="dots" role="group" aria-label="Сторінки відгуків" data-reviews-dots></div>
+          <button type="button" class="arrow-btn" aria-label="Наступні відгуки" data-reviews-next>›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Контакти, об'єднані з фінальним закликом -->
+    <section class="section contacts" id="contacts" aria-labelledby="contacts-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="section__label">Контакти</p>
+          <h2 id="contacts-title">Обговоримо <span class="accent">ваш проєкт</span></h2>
+          <p>Оберіть зручний спосіб зв'язку.<br class="only-desktop"> Новим клієнтам&nbsp;— знижка від <b class="accent">10%</b> на&nbsp;перше замовлення</p>
+        </div>
+
+        <ul class="contacts__list">
+          <li class="contact">
+            <div class="contact__head">
+              <span class="contact__icon"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square" stroke-linejoin="miter"><path d="M21 4 3 11l6 2.5L11.5 20l3.5-4.5 4.5 3.5L21 4Z"/><path d="M9 13.5 21 4"/></svg></span>
+              <div class="contact__name">
+                <h3>Telegram</h3>
+                <span class="contact__badge">Основний канал</span>
+              </div>
+            </div>
+            <p class="contact__text">Найшвидше: опишіть задачу, і&nbsp;обговоримо деталі</p>
+            <p class="contact__handle">@Shihova66</p>
+            <a class="btn btn--card" href="https://t.me/Shihova66" target="_blank" rel="noopener">Написати в&nbsp;Telegram</a>
+          </li>
+          <li class="contact">
+            <div class="contact__head">
+              <span class="contact__icon"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square" stroke-linejoin="miter"><path d="M4 4h16v12H10l-4 4v-4H4V4Z"/><path d="M9.5 8c0 2.5 2 4.5 4.5 4.5l1-1.5-1.5-1-1 .8a3 3 0 0 1-1.8-1.8l.8-1-1-1.5L9.5 8Z"/></svg></span>
+              <div class="contact__name">
+                <h3>Viber</h3>
+              </div>
+            </div>
+            <p class="contact__text">Зручно, якщо вам простіше<br class="only-desktop"> спілкуватися у&nbsp;Viber</p>
+            <p class="contact__handle"><a href="tel:+380995113210">+38 (099) 511 32 10</a></p>
+            <a class="btn btn--card" href="viber://chat?number=%2B380995113210">Написати у&nbsp;Viber</a>
+          </li>
+          <li class="contact">
+            <div class="contact__head">
+              <span class="contact__icon"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square" stroke-linejoin="miter"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg></span>
+              <div class="contact__name">
+                <h3>Пошта</h3>
+              </div>
+            </div>
+            <p class="contact__text">Для&nbsp;ТЗ, брифів і&nbsp;файлів, які зручніше надіслати листом</p>
+            <p class="contact__handle">elenashehova1966@gmail.com</p>
+            <a class="btn btn--card" href="mailto:elenashehova1966@gmail.com">Написати листа</a>
+          </li>
+        </ul>
+
+        <div class="contacts__brief">
+          <h3>Щоб я&nbsp;швидше порахувала вартість, напишіть:</h3>
+          <ul class="list-square">
+            <li>формат: креатив, карусель чи&nbsp;моушн</li>
+            <li>кількість креативів, слайдів або роликів</li>
+            <li>бажані терміни</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 8. Футер -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__inner">
+        <div class="site-footer__brand">
+          <a class="logo" href="#top">Olen<span>Art</span></a>
+          <p class="site-footer__tagline">Дизайн креативів, каруселей,<br>анімації для&nbsp;соцмереж</p>
+        </div>
+
+        <div class="site-footer__col">
+          <h2 class="site-footer__title">Контакти</h2>
+          <ul class="site-footer__links">
+            <li><a href="https://t.me/Shihova66" target="_blank" rel="noopener">Telegram @Shihova66</a></li>
+            <li><a href="https://www.instagram.com/shikhova675/" target="_blank" rel="noopener">Instagram @shikhova675</a></li>
+            <li><a href="mailto:elenashehova1966@gmail.com">elenashehova1966@gmail.com</a></li>
+          </ul>
+        </div>
+
+        <nav class="site-footer__col site-footer__col--nav" aria-label="Навігація у футері">
+          <h2 class="site-footer__title">Навігація</h2>
+          <ul class="site-footer__links site-footer__nav">
+            <li><a href="#top">Головна</a></li>
+            <li><a href="#about">Про&nbsp;мене</a></li>
+            <li><a href="#works">Приклади робіт</a></li>
+            <li><a href="#process">Етапи роботи</a></li>
+            <li><a href="#services">Ціни</a></li>
+            <li><a href="#reviews">Відгуки</a></li>
+            <li><a href="#contacts">Контакти</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="site-footer__bottom">
+        <span>© 2026 OlenArt</span>
+        <a href="privacy.html">Політика конфіденційності</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="to-top" href="#top" aria-label="Повернутися нагору" data-hidden>
+    <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" stroke-linejoin="miter"><path d="M12 20V5"/><path d="m5 11 7-7 7 7"/></svg>
+  </a>
+
+  <!-- Перегляд роботи на весь екран; наповнює main.js -->
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Перегляд роботи" hidden data-lightbox-root>
+    <div class="lightbox__stage" data-lightbox-stage></div>
+    <button type="button" class="lightbox__btn lightbox__prev" aria-label="Попередній слайд" data-lightbox-prev>‹</button>
+    <button type="button" class="lightbox__btn lightbox__next" aria-label="Наступний слайд" data-lightbox-next>›</button>
+    <span class="lightbox__count" data-lightbox-count></span>
+    <button type="button" class="lightbox__btn lightbox__close" aria-label="Закрити перегляд" data-lightbox-close>✕</button>
+  </div>
+</body>
+</html>

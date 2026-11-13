@@ -1,0 +1,341 @@
+/* Компоненти: кнопки, мітки, маркери, чипи, керування слайдерами, «Нагору», перегляд роботи */
+
+/* Кнопка з тінню-зсувом, що «вдавлюється» при натисканні */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--btn-height);
+  padding: 0 28px;
+  background: var(--c-accent);
+  color: var(--c-ink);
+  border: var(--border);
+  box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--c-ink);
+  font-family: var(--f-text);
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.08s ease, box-shadow 0.08s ease, background-color 0.15s;
+}
+
+.btn:hover {
+  color: var(--c-ink);
+  background: var(--c-accent-hover);
+}
+
+.btn:active {
+  transform: translate(6px, 6px);
+  box-shadow: 2px 2px 0 var(--c-ink);
+}
+
+.btn--white {
+  background: var(--c-card);
+}
+
+.btn--white:hover {
+  background: var(--c-bg);
+}
+
+/* На мобільному кнопки секцій на всю ширину */
+.btn--block {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    padding: 0 36px;
+    font-size: 18px;
+  }
+
+  .btn--block {
+    width: auto;
+  }
+}
+
+/* Мала біла кнопка з помаранчевою тінню — для чорної шапки */
+.btn--small {
+  min-height: 40px;
+  padding: 0 18px;
+  background: var(--c-card);
+  border-color: var(--c-card);
+  box-shadow: 4px 4px 0 var(--c-accent);
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+
+.btn--small:hover {
+  background: var(--c-bg);
+}
+
+.btn--small:active {
+  box-shadow: 0 0 0 var(--c-accent);
+  transform: translate(4px, 4px);
+}
+
+/* Середня кнопка в картках контактів */
+.btn--card {
+  min-height: 52px;
+  padding: 0 20px;
+  font-size: 15px;
+  box-shadow: 4px 4px 0 var(--c-ink);
+}
+
+/* Підпис секції: сірі великі літери */
+.section__label {
+  display: block;
+  font-size: var(--fs-label);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--c-label);
+}
+
+/* Список з квадратними помаранчевими маркерами */
+.list-square {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.list-square li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.list-square li::before {
+  content: "";
+  flex: none;
+  width: var(--dot, 10px);
+  height: var(--dot, 10px);
+  background: var(--c-accent);
+  border: 1px solid var(--c-accent-text);
+}
+
+/* Чип інструмента */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border: 1.5px solid var(--c-accent-strong);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.chip::before {
+  content: "";
+  flex: none;
+  width: 8px;
+  height: 8px;
+  background: var(--c-accent);
+  border: 1px solid var(--c-accent-text);
+}
+
+@media (min-width: 768px) {
+  .chips {
+    gap: 10px;
+  }
+
+  .chip {
+    gap: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+/* Квадратна кнопка-стрілка слайдера */
+.arrow-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--tap);
+  height: var(--tap);
+  background: var(--c-card);
+  border: var(--border);
+  color: var(--c-ink);
+  font: 700 22px/1 var(--f-text);
+}
+
+.arrow-btn:hover {
+  background: var(--c-accent-hover);
+}
+
+/* Квадратні точки слайдера */
+.dots {
+  display: flex;
+  justify-content: center;
+}
+
+.dots button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+}
+
+.dots button::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--dot-border, var(--c-ink));
+  background: var(--dot-bg, transparent);
+}
+
+.dots [aria-current="true"]::before {
+  background: var(--c-accent);
+}
+
+/* Темна плашка-мітка на роботі */
+.label-dark {
+  position: absolute;
+  top: 10px;
+  padding: 4px 8px;
+  background: var(--c-ink);
+  color: var(--c-card);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Кнопка «Нагору» */
+.to-top {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 50;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  background: var(--c-accent);
+  border: var(--border);
+  box-shadow: 3px 3px 0 var(--c-ink);
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.to-top:hover {
+  background: var(--c-accent-hover);
+}
+
+.to-top[data-hidden] {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media (min-width: 768px) {
+  .to-top {
+    right: 24px;
+    bottom: 24px;
+    width: 52px;
+    height: 52px;
+    box-shadow: 4px 4px 0 var(--c-ink);
+  }
+}
+
+/* Перегляд роботи на весь екран */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 12px;
+  background: rgba(28, 28, 28, 0.94);
+  cursor: zoom-out;
+}
+
+.lightbox[hidden] {
+  display: none;
+}
+
+.lightbox__stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.lightbox__media {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border: 2px solid var(--c-card);
+  background: #000;
+  cursor: default;
+}
+
+.lightbox__btn {
+  position: absolute;
+  z-index: 2;
+  width: 52px;
+  height: 52px;
+  background: var(--c-card);
+  border: var(--border);
+  box-shadow: 4px 4px 0 var(--c-ink);
+  font: 700 26px/1 var(--f-text);
+}
+
+.lightbox__prev,
+.lightbox__next {
+  top: calc(50% - 26px);
+}
+
+.lightbox__prev {
+  left: 8px;
+}
+
+.lightbox__next {
+  right: 8px;
+}
+
+.lightbox__close {
+  top: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  background: var(--c-accent);
+  font-size: 22px;
+}
+
+.lightbox__count {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  padding: 8px 12px;
+  background: var(--c-ink);
+  color: var(--c-card);
+  border: 1px solid var(--c-card);
+  font: 700 14px/1 var(--f-text);
+}
+
+@media (min-width: 1024px) {
+  .lightbox {
+    padding: 72px 96px;
+  }
+
+  .lightbox__prev {
+    left: 24px;
+  }
+
+  .lightbox__next {
+    right: 24px;
+  }
+}

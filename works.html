@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Приклади робіт — OlenArt</title>
+  <meta name="description" content="Портфоліо OlenArt: статичні рекламні креативи, каруселі для Instagram і моушн для соцмереж.">
+  <!-- Поки сайт у розробці; прибрати перед запуском -->
+  <meta name="robots" content="noindex">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@400;900&family=Inter:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/sections.css">
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/works.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Перейти до змісту</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html" aria-label="OlenArt — на головну">Olen<span>Art</span></a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Навігація по сайту">
+        <ul>
+          <li><a href="index.html#about">Про&nbsp;мене</a></li>
+          <li><a href="works.html" aria-current="page">Приклади робіт</a></li>
+          <li><a href="index.html#process">Етапи роботи</a></li>
+          <li><a href="index.html#services">Ціни</a></li>
+          <li><a href="index.html#reviews">Відгуки</a></li>
+          <li><a href="index.html#contacts">Контакти</a></li>
+        </ul>
+        <a class="btn btn--small site-nav__cta" href="https://t.me/Shihova66" target="_blank" rel="noopener">Написати в&nbsp;Telegram</a>
+      </nav>
+
+      <a class="btn btn--small site-header__cta" href="https://t.me/Shihova66" target="_blank" rel="noopener">Написати в&nbsp;Telegram</a>
+
+      <button class="burger" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="site-nav">
+        <svg class="burger__open" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <svg class="burger__close" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M5 5l14 14M19 5L5 19"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Галерея з фільтром: works.html?type=creatives|carousels|motion; картки рендерить works.js -->
+    <section class="section section--accent works gallery" aria-labelledby="works-title">
+      <div class="container gallery__inner">
+        <a class="gallery__back" href="index.html">← На&nbsp;головну</a>
+
+        <div class="section__head">
+          <p class="section__label">Приклади робіт</p>
+          <h1 id="works-title" class="gallery__title">Роботи, які вже&nbsp;працюють</h1>
+        </div>
+
+        <div class="gallery__bar">
+          <nav class="filters" aria-label="Фільтри галереї">
+            <a href="works.html" data-filter="all">Усі</a>
+            <a href="works.html?type=creatives" data-filter="creatives">Креативи</a>
+            <a href="works.html?type=carousels" data-filter="carousels">Каруселі</a>
+            <a href="works.html?type=motion" data-filter="motion">Моушн</a>
+          </nav>
+          <p class="gallery__count only-desktop" aria-live="polite" data-gallery-count></p>
+        </div>
+
+        <div class="gallery__slider">
+          <button type="button" class="arrow-btn gallery__arrow only-desktop" aria-label="Попередні роботи" data-gallery-prev>‹</button>
+          <div class="works__grid gallery__grid" data-gallery-list></div>
+          <button type="button" class="arrow-btn gallery__arrow only-desktop" aria-label="Наступні роботи" data-gallery-next>›</button>
+        </div>
+
+        <div class="gallery__pager only-mobile">
+          <div class="dots" role="group" aria-label="Перемикач робіт" data-gallery-dots></div>
+          <span data-gallery-num></span>
+        </div>
+
+        <div class="section__action">
+          <a class="btn btn--white btn--block" href="index.html#contacts">Хочу так само</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__inner">
+        <div class="site-footer__brand">
+          <a class="logo" href="index.html">Olen<span>Art</span></a>
+          <p class="site-footer__tagline">Дизайн креативів, каруселей,<br>анімації для&nbsp;соцмереж</p>
+        </div>
+
+        <div class="site-footer__col">
+          <h2 class="site-footer__title">Контакти</h2>
+          <ul class="site-footer__links">
+            <li><a href="https://t.me/Shihova66" target="_blank" rel="noopener">Telegram @Shihova66</a></li>
+            <li><a href="https://www.instagram.com/shikhova675/" target="_blank" rel="noopener">Instagram @shikhova675</a></li>
+            <li><a href="mailto:elenashehova1966@gmail.com">elenashehova1966@gmail.com</a></li>
+          </ul>
+        </div>
+
+        <nav class="site-footer__col site-footer__col--nav" aria-label="Навігація у футері">
+          <h2 class="site-footer__title">Навігація</h2>
+          <ul class="site-footer__links site-footer__nav">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="index.html#about">Про&nbsp;мене</a></li>
+            <li><a href="works.html">Приклади робіт</a></li>
+            <li><a href="index.html#process">Етапи роботи</a></li>
+            <li><a href="index.html#services">Ціни</a></li>
+            <li><a href="index.html#reviews">Відгуки</a></li>
+            <li><a href="index.html#contacts">Контакти</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="site-footer__bottom">
+        <span>© 2026 OlenArt</span>
+        <a href="privacy.html">Політика конфіденційності</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Перегляд роботи на весь екран; наповнює main.js -->
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Перегляд роботи" hidden data-lightbox-root>
+    <div class="lightbox__stage" data-lightbox-stage></div>
+    <button type="button" class="lightbox__btn lightbox__prev" aria-label="Попередній слайд" data-lightbox-prev>‹</button>
+    <button type="button" class="lightbox__btn lightbox__next" aria-label="Наступний слайд" data-lightbox-next>›</button>
+    <span class="lightbox__count" data-lightbox-count></span>
+    <button type="button" class="lightbox__btn lightbox__close" aria-label="Закрити перегляд" data-lightbox-close>✕</button>
+  </div>
+</body>
+</html>

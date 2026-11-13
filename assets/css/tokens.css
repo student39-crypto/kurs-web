@@ -1,0 +1,69 @@
+/* Дизайн-токени OlenArt — за прототипом v3 (Main-v3 / Main-v3-mobile).
+   Значення за замовчуванням — мобільні (390 px), від 768 px — десктопні. */
+
+:root {
+  /* Кольори */
+  --c-bg: #FAFAFA;            /* фон сторінки */
+  --c-card: #FFFFFF;          /* картки, світлі секції */
+  --c-ink: #1C1C1C;           /* текст, рамки, тіні, шапка */
+  --c-label: #4A4A4A;         /* підписи секцій */
+  --c-muted: #6B6B6B;         /* примітки */
+  --c-line: #DDD6CC;          /* тонка рамка карток послуг */
+  --c-accent: #FF6A13;        /* кнопки й плашки */
+  --c-accent-strong: #E85A00; /* фон «Приклади робіт», великий акцентний текст (від 24 px) */
+  --c-accent-text: #B84A00;   /* дрібний акцентний текст, цифри етапів */
+  --c-accent-hover: #FF9B3D;  /* hover */
+  --c-reviews: #BFBFBF;       /* фон «Відгуки» */
+  --c-footer-text: #CFCFCF;   /* другорядний текст на чорному */
+
+  /* Шрифти */
+  --f-display: "Fira Sans Extra Condensed", "Arial Narrow", sans-serif;
+  --f-text: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --fs-slogan: 80px;
+  --fs-slogan-sub: 40px;
+  --fs-h2: 40px;
+  --fs-label: 14px;
+  --fs-text: 16px;
+  --fs-note: 14px;
+  --lh-text: 1.3;
+
+  /* Відступи */
+  --sp-section: 56px;
+  --sp-label-title: 12px;
+  --sp-title-text: 16px;
+  --sp-paragraph: 12px;
+  --sp-text-content: 24px;
+  --sp-content-button: 24px;
+  --sp-cards: 16px;
+
+  --container: 1200px;
+  --gutter: 20px;
+
+  /* Компоненти */
+  --border: 2px solid var(--c-ink);
+  --shadow-offset: 6px;
+  --btn-height: 56px;
+  --tap: 44px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --fs-slogan: 120px;
+    --fs-slogan-sub: 66px;
+    --fs-h2: 56px;
+    --fs-label: 18px;
+
+    --sp-section: 80px;
+    --sp-label-title: 16px;
+    --sp-title-text: 24px;
+    --sp-text-content: 32px;
+    --sp-content-button: 32px;
+    --sp-cards: 24px;
+
+    --gutter: 24px;
+
+    --shadow-offset: 8px;
+    --btn-height: 64px;
+  }
+}

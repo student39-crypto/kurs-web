@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OlenArt — сайт у розробці</title>
+  <meta name="description" content="Сайт-портфоліо OlenArt: рекламні креативи для соцмереж. Скоро відкриття.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@400;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #FAFAFA;
+      --text: #1C1C1C;
+      --muted: #6B6B6B;
+      --accent: #FF6A13;
+      --accent-text: #B84A00;
+      --hover: #FF9B3D;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 20px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Inter", system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.3;
+      text-align: center;
+    }
+
+    .logo {
+      font-family: "Fira Sans Extra Condensed", sans-serif;
+      font-weight: 900;
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+    .logo span { color: var(--accent-text); }
+
+    .pixels {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+    .pixels i {
+      width: 16px;
+      height: 16px;
+      background: var(--accent);
+      animation: blink 1.8s infinite;
+    }
+    .pixels i:nth-child(2) { background: var(--text); animation-delay: .6s; }
+    .pixels i:nth-child(3) { animation-delay: 1.2s; }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: .25; }
+    }
+
+    h1 {
+      font-family: "Fira Sans Extra Condensed", sans-serif;
+      font-weight: 900;
+      text-transform: uppercase;
+      font-size: clamp(48px, 10vw, 120px);
+      line-height: 1;
+      margin-bottom: 24px;
+    }
+
+    p {
+      color: var(--muted);
+      max-width: 480px;
+      margin-bottom: 32px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 14px 28px;
+      background: var(--accent);
+      color: var(--text);
+      border: 2px solid var(--text);
+      box-shadow: 8px 8px 0 var(--text);
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform .15s, box-shadow .15s, background .15s;
+    }
+    .btn:hover { background: var(--hover); }
+    .btn:active {
+      transform: translate(8px, 8px);
+      box-shadow: 0 0 0 var(--text);
+    }
+    .btn:focus-visible {
+      outline: 3px solid var(--text);
+      outline-offset: 4px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .pixels i { animation: none; }
+      .btn { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">Olen<span>Art</span></div>
+
+  <div class="pixels" aria-hidden="true"><i></i><i></i><i></i></div>
+
+  <h1>Сайт у розробці</h1>
+
+  <p>Тут скоро з’явиться портфоліо рекламних креативів для соцмереж. А поки можна написати мені напряму.</p>
+
+  <a class="btn" href="https://t.me/Shihova66" target="_blank" rel="noopener">Написати в Telegram</a>
+</body>
+</html>
