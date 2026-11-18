@@ -32,7 +32,14 @@ while ($listener.IsListening) {
     $ctx.Response.ContentType = if ($types[$ext]) { $types[$ext] } else { 'application/octet-stream' }
     $ctx.Response.StatusCode = 200
   } else {
-    $bytes = [Text.Encoding]::UTF8.GetBytes('404 Not Found')
+    # Як на хостингу: на неіснуючу адресу віддаємо 404.html зі статусом 404
+    $nf = Join-Path $root '404.html'
+    if (Test-Path -LiteralPath $nf -PathType Leaf) {
+      $bytes = [IO.File]::ReadAllBytes($nf)
+      $ctx.Response.ContentType = 'text/html; charset=utf-8'
+    } else {
+      $bytes = [Text.Encoding]::UTF8.GetBytes('404 Not Found')
+    }
     $ctx.Response.StatusCode = 404
   }
   # На HEAD-запит тіло не надсилаємо
