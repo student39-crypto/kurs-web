@@ -32,7 +32,7 @@ const CREATIVES = [
 
 const CAROUSELS = [
   carousel('Патчі для контролю апетиту', 'patches', 4),
-  carousel('Кейс Fit by Toni', 'carousel', 7),
+  carousel('Сонячні станції «Колорит»', 'kolorit', 4),
   carousel('Вікна у Харкові', 'windows', 3),
 ];
 

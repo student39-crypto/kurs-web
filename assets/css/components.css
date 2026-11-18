@@ -100,15 +100,18 @@
   gap: 4px;
 }
 
+/* Квадратик стоїть навпроти першого рядка, навіть якщо пункт переноситься */
 .list-square li {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
 }
 
 .list-square li::before {
   content: "";
   flex: none;
+  margin-top: calc((1.5em - var(--dot, 10px)) / 2);
+  margin-top: calc((1lh - var(--dot, 10px)) / 2);
   width: var(--dot, 10px);
   height: var(--dot, 10px);
   background: var(--c-accent);
