@@ -10,29 +10,31 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@400;900&family=Inter:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
 
-  <!-- Шляхи від кореня сайту (/...): сервер віддає цю сторінку за будь-якою адресою, зокрема вкладеною -->
-  <link rel="stylesheet" href="/assets/css/tokens.css">
-  <link rel="stylesheet" href="/assets/css/base.css">
-  <link rel="stylesheet" href="/assets/css/components.css">
-  <link rel="stylesheet" href="/assets/css/sections.css">
+  <!-- GitHub Pages віддає цю сторінку за будь-якою неіснуючою адресою, зокрема вкладеною.
+       base задає папку сайту, тож відносні шляхи нижче завжди ведуть у /kurs-web/ -->
+  <base href="/kurs-web/">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/sections.css">
 
-  <script src="/assets/js/main.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 </head>
 <body id="top">
   <a class="skip-link" href="#main">Перейти до змісту</a>
 
   <header class="site-header">
     <div class="container site-header__inner">
-      <a class="logo" href="/index.html" aria-label="OlenArt — на головну">Olen<span>Art</span></a>
+      <a class="logo" href="index.html" aria-label="OlenArt — на головну">Olen<span>Art</span></a>
 
       <nav class="site-nav" id="site-nav" aria-label="Навігація по сайту">
         <ul>
-          <li><a href="/index.html#about">Про&nbsp;мене</a></li>
-          <li><a href="/works.html">Приклади робіт</a></li>
-          <li><a href="/index.html#process">Етапи роботи</a></li>
-          <li><a href="/index.html#services">Ціни</a></li>
-          <li><a href="/index.html#reviews">Відгуки</a></li>
-          <li><a href="/index.html#contacts">Контакти</a></li>
+          <li><a href="index.html#about">Про&nbsp;мене</a></li>
+          <li><a href="works.html">Приклади робіт</a></li>
+          <li><a href="index.html#process">Етапи роботи</a></li>
+          <li><a href="index.html#services">Ціни</a></li>
+          <li><a href="index.html#reviews">Відгуки</a></li>
+          <li><a href="index.html#contacts">Контакти</a></li>
         </ul>
         <a class="btn btn--small site-nav__cta" href="https://t.me/Shihova66" target="_blank" rel="noopener">Написати в&nbsp;Telegram</a>
       </nav>
@@ -59,8 +61,8 @@
           <p>Сторінки за&nbsp;цією адресою немає: можливо, посилання застаріло або в&nbsp;ньому помилка. Зате роботи на&nbsp;місці.</p>
 
           <div class="not-found__actions">
-            <a class="btn" href="/index.html">На&nbsp;головну</a>
-            <a class="btn btn--white" href="/works.html">Приклади робіт</a>
+            <a class="btn" href="index.html">На&nbsp;головну</a>
+            <a class="btn btn--white" href="works.html">Приклади робіт</a>
           </div>
         </div>
       </div>
@@ -71,7 +73,7 @@
     <div class="container">
       <div class="site-footer__bottom">
         <span>© 2026 OlenArt</span>
-        <a href="/privacy.html">Політика конфіденційності</a>
+        <a href="privacy.html">Політика конфіденційності</a>
       </div>
     </div>
   </footer>

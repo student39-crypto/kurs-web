@@ -23,7 +23,10 @@ Write-Host "Serving $root at http://localhost:$Port/"
 while ($listener.IsListening) {
   $ctx = $listener.GetContext()
   $path = [Uri]::UnescapeDataString($ctx.Request.Url.AbsolutePath).TrimStart('/')
-  if ($path -eq '') { $path = 'index.html' }
+  # Як на GitHub Pages: сайт відкривається і за адресою /kurs-web/...
+  if ($path -eq 'kurs-web') { $ctx.Response.Redirect('/kurs-web/'); $ctx.Response.Close(); continue }
+  if ($path.StartsWith('kurs-web/')) { $path = $path.Substring('kurs-web/'.Length) }
+  if ($path -eq '' -or $path.EndsWith('/')) { $path += 'index.html' }
   $file = [IO.Path]::GetFullPath((Join-Path $root $path))
 
   if ($file.StartsWith($root) -and (Test-Path -LiteralPath $file -PathType Leaf)) {
