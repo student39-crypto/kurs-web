@@ -1,0 +1,24 @@
+[
+  { "id": "creative-1", "name": "Працюй з дому як хочеш", "nisha": "інфобіз", "type": "креатив", "format": "9:16", "file": "jpg", "description": "Статичний креатив «Працюй з дому як хочеш»: підбір вакансій під досвід і графік, часткова або повна зайнятість" },
+  { "id": "creative-2", "name": "Glasses — Reveal your inner feline", "nisha": "e-commerce", "type": "креатив", "format": "9:16", "file": "jpg", "description": "Статичний креатив: Glasses — Reveal your inner feline" },
+  { "id": "creative-3", "name": "Порядок у бухгалтерії без вашої участі", "nisha": "бухгалтерія", "type": "креатив", "format": "9:16", "file": "jpg", "description": "Статичний креатив: Порядок у бухгалтерії без вашої участі" },
+  { "id": "creative-4", "name": "Create your own game", "nisha": "навчання", "type": "креатив", "format": "9:16", "file": "jpg", "description": "Статичний креатив: Create your own game — курс для дітей" },
+  { "id": "creative-5", "name": "Power Bank — clean energy", "nisha": "e-commerce", "type": "креатив", "format": "9:16", "file": "jpg", "description": "Статичний креатив: Power Bank — clean energy" },
+  { "id": "creative-6", "name": "Gentle sun, serious protection — SPF 50+", "nisha": "e-commerce", "type": "креатив", "format": "9:16", "file": "jpg", "description": "Статичний креатив: Gentle sun, serious protection — SPF 50+" },
+  { "id": "creative-7", "name": "Ready to move in", "nisha": "нерухомість", "type": "креатив", "format": "9:16", "file": "jpg", "description": "Статичний креатив: Ready to move in — апартаменти" },
+  { "id": "creative-8", "name": "Зелень matcha & coffee", "nisha": "HoReCa", "type": "креатив", "format": "1:1", "file": "jpg", "description": "Статичний креатив: Зелень matcha & coffee — сезонне меню" },
+  { "id": "creative-9", "name": "New journeys, timeless style", "nisha": "e-commerce", "type": "креатив", "format": "9:16", "file": "jpg", "description": "Статичний креатив: New journeys, timeless style — сумка" },
+  { "id": "creative-10", "name": "Елітний корм для птиці", "nisha": "e-commerce", "type": "креатив", "format": "9:16", "file": "jpg", "description": "Статичний креатив: Елітний корм для птиці" },
+
+  { "id": "carousel-patches", "name": "Патчі для контролю апетиту", "nisha": "e-commerce", "type": "карусель", "format": "4:5", "slides": 4, "file": "jpg", "description": "Карусель «Патчі для контролю апетиту», 4 слайди" },
+  { "id": "carousel-kolorit", "name": "Сонячні станції «Колорит»", "nisha": "енергетика", "type": "карусель", "format": "4:5", "slides": 4, "file": "jpg", "description": "Карусель «Сонячні станції «Колорит»», 4 слайди" },
+  { "id": "carousel-windows", "name": "Вікна у Харкові", "nisha": "вікна", "type": "карусель", "format": "1:1", "slides": 3, "file": "jpg", "description": "Карусель «Вікна у Харкові», 3 слайди" },
+
+  { "id": "motion-1", "name": "Хочеш так само?", "nisha": "б'юті", "type": "моушн", "format": "9:16", "file": "mp4", "description": "Моушн-креатив «Хочеш так само?» для салону краси: реклама спа-процедури" },
+  { "id": "motion-2", "name": "Шаурма", "nisha": "HoReCa", "type": "моушн", "format": "9:16", "file": "mp4", "description": "Моушн-креатив: шаурма" },
+  { "id": "motion-3", "name": "Eyelashes", "nisha": "б'юті", "type": "моушн", "format": "9:16", "file": "mp4", "description": "Моушн-креатив: Eyelashes" },
+  { "id": "motion-4", "name": "Reading", "nisha": "мобільні застосунки", "type": "моушн", "format": "9:16", "file": "mp4", "description": "Моушн-креатив «Reading»: реклама мобільного застосунку" },
+  { "id": "motion-5", "name": "Анімований глобус", "nisha": "анімація лого", "type": "моушн", "format": "9:16", "file": "mp4", "description": "Моушн-креатив: анімація логотипа з глобусом" },
+  { "id": "motion-6", "name": "Подаруй їй спогади", "nisha": "e-commerce", "type": "моушн", "format": "9:16", "file": "mp4", "description": "Моушн-креатив «Подаруй їй спогади» для салону прикрас" },
+  { "id": "motion-7", "name": "Smart Watch", "nisha": "e-commerce", "type": "моушн", "format": "9:16", "file": "mp4", "description": "Моушн-креатив: Smart Watch" }
+]
